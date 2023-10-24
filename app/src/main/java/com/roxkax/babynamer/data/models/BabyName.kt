@@ -1,4 +1,4 @@
-package com.roxkax.babynamer.data
+package com.roxkax.babynamer.data.models
 
 data class BabyName (
     val year : String,

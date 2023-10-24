@@ -3,9 +3,8 @@ package com.roxkax.babynamer.ui.detail
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import com.roxkax.babynamer.data.GenderEnum
+import com.roxkax.babynamer.data.models.GenderEnum
 import com.roxkax.babynamer.databinding.ActivityNameDetailBinding
-import com.roxkax.babynamer.ui.home.HomeViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

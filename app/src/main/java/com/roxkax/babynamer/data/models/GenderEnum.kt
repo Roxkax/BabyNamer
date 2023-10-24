@@ -1,4 +1,4 @@
-package com.roxkax.babynamer.data
+package com.roxkax.babynamer.data.models
 
 
 enum class GenderEnum(val value: Int) {
