@@ -2,4 +2,7 @@
     <string name="app_name">BabyNamer</string>
     <string name="male_button">MALE</string>
     <string name="female_button">FEMALE</string>
+    <string name="title">Please pick the desired gender</string>
+    <string name="generated_name_title">Generated name</string>
+    <string name="pick_another_name_button">Pick another name</string>
 </resources>

@@ -20,7 +20,9 @@ class NameDetailActivity : AppCompatActivity() {
 
         viewModel.loadData(intent)
 
-        viewModel.babyName.observe(this,::onBabyNameChange)
+        viewModel.babyName.observe(this, ::onBabyNameChange)
+
+        binding.pickAnotherButton.setOnClickListener { onBackPressedDispatcher.onBackPressed() }
     }
 
     private fun onBabyNameChange(babyName: BabyName?) {
