@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BabyNamer</string>
+    <string name="male_button">MALE</string>
+    <string name="female_button">FEMALE</string>
+</resources>
