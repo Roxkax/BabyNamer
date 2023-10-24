@@ -6,5 +6,5 @@ import javax.inject.Inject
 
 class NameRepository @Inject constructor(private val providers: Set<@JvmSuppressWildcards INameProvider>) {
 
-    fun getNames(): List<BabyName> =providers.map { it.getListOfNames() }.flatten().distinct()
+    suspend fun getNames(): List<BabyName> = providers.map { it.getListOfNames() }.flatten().distinct()
 }

@@ -12,7 +12,7 @@ import java.io.BufferedReader
 import java.lang.Exception
 
 class LocalNameProvider(@ApplicationContext private val context: Context) : INameProvider {
-    override fun getListOfNames(): List<BabyName> {
+    override suspend fun getListOfNames(): List<BabyName> {
         return try {
             val names = loadJsonArray(context)
             names.toBabyNameList()

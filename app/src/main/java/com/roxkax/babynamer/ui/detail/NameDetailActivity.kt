@@ -3,7 +3,7 @@ package com.roxkax.babynamer.ui.detail
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import com.roxkax.babynamer.data.models.GenderEnum
+import com.roxkax.babynamer.data.models.BabyName
 import com.roxkax.babynamer.databinding.ActivityNameDetailBinding
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -20,10 +20,10 @@ class NameDetailActivity : AppCompatActivity() {
 
         viewModel.loadData(intent)
 
-        viewModel.gender.observe(this,::onGenderChange)
+        viewModel.babyName.observe(this,::onBabyNameChange)
     }
 
-    private fun onGenderChange(genderEnum: GenderEnum?) {
-        binding.label.text = genderEnum.toString()
+    private fun onBabyNameChange(babyName: BabyName?) {
+        binding.label.text = babyName?.name.toString()
     }
 }
